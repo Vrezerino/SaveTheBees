@@ -1,0 +1,26 @@
+// app global css in SCSS form
+
+body {
+  color: black;
+  font-family: 'Circular';
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #d19b07;
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 100;
+  font-style: normal;
+  font-display: auto;
+  src: local('Circular'), url('/public/fonts/Circular/CircularStd-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Morison Bold Italic';
+  font-display: auto;
+  src: local('Morison'), url('/public/fonts/Morison/Morison-Bold-Italic.ttf') format('truetype');
+}

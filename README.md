@@ -1,5 +1,5 @@
 <div align="center">
-# 🐝 Save The Bees 🐝
+<h1># 🐝 Save The Bees 🐝</h1>
 
 A Quasar Project with information and resources on how to help bees.
 

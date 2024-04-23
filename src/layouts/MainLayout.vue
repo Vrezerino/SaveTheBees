@@ -6,15 +6,20 @@
       <q-toolbar>
         <q-btn flat dense round icon='menu' aria-label='Menu' @click='toggleLeftDrawer' />
       </q-toolbar>
-      <div class='q-px-lg q-pt-sm q-mb-md' style='font-family: Morison Bold Italic;'>
+      <div class='q-px-lg q-pt-sm' style='font-family: Morison Bold Italic;'>
         <div class='text-h1'>Save The Bees</div>
         <div class='subtitle-1'>Information & Resources</div>
+      </div>
+      <div class='text-caption q-pr-sm' style='text-align: right;'>
+        by <a href='https://github.com/Vrezerino' class='text-white ' style='text-decoration: none;'>
+          Patrick Park
+        </a>
       </div>
       <q-img src='/img/bee1.jpg' class='header-image absolute-top' />
     </q-header>
 
     <q-drawer v-model='leftDrawerOpen' show-if-above :width='250' :breakpoint='600'>
-      <q-scroll-area style='height: calc(100% - 197px); margin-top: 197px; border-right: 1px solid #ddd'>
+      <q-scroll-area style='height: calc(100% - 201px); margin-top: 201px; border-right: 1px solid #ddd'>
         <q-list padding>
 
           <q-item to='/' exact clickable v-ripple>
@@ -40,7 +45,7 @@
 
       </q-scroll-area>
 
-      <q-img class='corner-image absolute-top' src='/img/bees.jpg' style='height: 197px'>
+      <q-img class='corner-image absolute-top' src='/img/bees.jpg' style='height: 201px'>
         <div class='absolute-bottom bg-transparent'>
           <q-avatar size='56px' class='q-mb-sm'>
             <img src=''>

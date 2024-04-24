@@ -7,7 +7,7 @@
         <q-btn flat dense round icon='menu' aria-label='Menu' @click='toggleLeftDrawer' />
       </q-toolbar>
       <div class='q-px-lg q-pt-sm' style='font-family: Morison Bold Italic;'>
-        <div class='text-h1'>Save The Bees</div>
+        <div :class="$q.screen.gt.sm ? 'text-h1' : 'text-h4'">Save The Bees</div>
         <div class='subtitle-1'>Information & Resources</div>
       </div>
       <div class='text-caption q-pr-sm' style='text-align: right;'>

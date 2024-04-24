@@ -11,6 +11,21 @@ a {
   color: #d19b07;
 }
 
+.mainheader {
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+
+.corner-image {
+  height: 145px;
+}
+
+.scroll-area {
+  height: 145px;
+  margin-top: 145px;
+  border-right: 1px solid #ddd;
+}
+
 @font-face {
   font-family: 'Circular';
   font-weight: 100;
@@ -23,4 +38,22 @@ a {
   font-family: 'Morison Bold Italic';
   font-display: auto;
   src: local('Morison'), url('/public/fonts/Morison/Morison-Bold-Italic.ttf') format('truetype');
+}
+
+@media only screen and (min-width: 1440px) {
+  .mainheader {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 6rem;
+    letter-spacing: -0.01562em;
+  }
+
+  .corner-image {
+    height: 201px;
+  }
+
+  .scroll-area {
+    height: 201px;
+    margin-top: 201px;
+  }
 }

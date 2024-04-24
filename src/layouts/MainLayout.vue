@@ -7,7 +7,7 @@
         <q-btn flat dense round icon='menu' aria-label='Menu' @click='toggleLeftDrawer' />
       </q-toolbar>
       <div class='q-px-lg q-pt-sm' style='font-family: Morison Bold Italic;'>
-        <div :class="$q.screen.gt.sm ? 'text-h1' : 'text-h4'">Save The Bees</div>
+        <div class='mainheader'>Save The Bees</div>
         <div class='subtitle-1'>Information & Resources</div>
       </div>
       <div class='text-caption q-pr-sm' style='text-align: right;'>
@@ -19,7 +19,7 @@
     </q-header>
 
     <q-drawer v-model='leftDrawerOpen' show-if-above :width='250' :breakpoint='600'>
-      <q-scroll-area style='height: calc(100% - 201px); margin-top: 201px; border-right: 1px solid #ddd'>
+      <q-scroll-area class='scroll-area'>
         <q-list padding>
 
           <q-item to='/' exact clickable v-ripple>
@@ -45,7 +45,7 @@
 
       </q-scroll-area>
 
-      <q-img class='corner-image absolute-top' src='/img/bees.jpg' style='height: 201px'>
+      <q-img class='corner-image absolute-top' src='/img/bees.jpg'>
         <div class='absolute-bottom bg-transparent'>
           <q-avatar size='56px' class='q-mb-sm'>
             <img src=''>
